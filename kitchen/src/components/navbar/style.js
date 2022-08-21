@@ -106,7 +106,7 @@ export const NavItem = styled.li`
     padding-left: 10px;
   }
   @media (max-width: 1200px) {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 2rem;
+    margin: 20px 0;
   }
 `;

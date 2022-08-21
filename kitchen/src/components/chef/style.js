@@ -26,6 +26,7 @@ export const ChefWrapper = styled.div`
 export const FlexContentOne = styled.div`
   @media (max-width: 1200px) {
     margin-top: 30px;
+    margin-right: 20px;
   }
 `;
 export const FlexContentTwo = styled.div`

@@ -11,11 +11,17 @@ const Navbar = () => {
   const handleClick = () => {
     setClick(!click);
   };
+  if (click) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflowY = "scroll";
+  }
 
-  useEffect(() => {
-    const body = document.querySelector("body");
-    body.style.overflow = click ? "hidden" : "auto";
-  }, [click]);
+  // useEffect(() => {
+
+  //   // // const body = document.querySelector("body");
+  //   // // body.style.overflow = click ? "hidden" : "auto";
+  // }, [click]);
 
   return (
     <NavWrapper>
@@ -30,8 +36,14 @@ const Navbar = () => {
           {data.map((item) => {
             const { id, text, Img, path } = item;
             return (
-              <NavItem key={id} onClick={handleClick}>
-                <Link to={path} smooth={true} duration={1000} className="link">
+              <NavItem key={id}>
+                <Link
+                  to={path}
+                  smooth={true}
+                  duration={1000}
+                  className="link"
+                  onClick={handleClick}
+                >
                   {text}
                   <Img className="icon" size={40} />
                 </Link>

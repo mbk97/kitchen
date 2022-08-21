@@ -8,20 +8,24 @@ import Video from "./components/video/Video";
 import Awards from "./components/awards/Awards";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import { GeneralWrapper, GlobalStyle } from "./components/global/Global";
 
 function App() {
   return (
     <>
-      <Header />
-      <About />
-      <Special />
-      <Chef />
-      <Video />
-      <Awards />
-      <Gallery />
-      <Contact />
-      <NewsLetter />
-      <Footer />
+      <GlobalStyle />
+      <GeneralWrapper>
+        <Header />
+        <About />
+        <Special />
+        <Chef />
+        <Video />
+        <Awards />
+        <Gallery />
+        <Contact />
+        <NewsLetter />
+        <Footer />
+      </GeneralWrapper>
     </>
   );
 }
