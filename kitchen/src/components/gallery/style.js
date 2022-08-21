@@ -7,6 +7,7 @@ export const GalleryWrapper = styled.div`
   padding-top: 20px;
   padding-left: 30px;
   padding-bottom: 20px;
+  overflow-x: hidden;
   /* margin-top: 2rem; */
 
   @media (max-width: 1200px) {

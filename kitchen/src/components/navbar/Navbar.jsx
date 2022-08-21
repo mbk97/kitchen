@@ -3,6 +3,7 @@ import { logo } from "../../assets/svg";
 import { NavWrapper, Nav, Logo, LogoImg, NavList, NavItem } from "./style";
 import { data } from "./data";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -27,14 +28,14 @@ const Navbar = () => {
         </Logo>
         <NavList>
           {data.map((item) => {
-            const { id, text, Img } = item;
+            const { id, text, Img, path } = item;
             return (
-              <>
-                <NavItem key={id} onClick={handleClick}>
+              <NavItem key={id} onClick={handleClick}>
+                <Link to={path} smooth={true} duration={1000} className="link">
                   {text}
                   <Img className="icon" size={40} />
-                </NavItem>
-              </>
+                </Link>
+              </NavItem>
             );
           })}
         </NavList>

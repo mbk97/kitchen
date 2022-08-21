@@ -17,7 +17,7 @@ import { spoon, knife } from "../../assets/svg";
 
 const About = () => {
   return (
-    <CustomWrapper>
+    <CustomWrapper id="about">
       <AboutWrapper>
         <AboutContainer>
           <AboutHeaderWrapper>

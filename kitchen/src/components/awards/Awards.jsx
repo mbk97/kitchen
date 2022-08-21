@@ -20,7 +20,7 @@ import awardTwo from "../../assets/images/awardTwo.png";
 
 const Awards = () => {
   return (
-    <CustomWrapper>
+    <CustomWrapper id="awards">
       <AwardHeaderImg src={awardOne} />
       <AwardWrapper>
         <AwardContent>

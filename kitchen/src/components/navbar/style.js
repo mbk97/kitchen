@@ -97,8 +97,11 @@ export const NavItem = styled.li`
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+
+  .link {
+    display: flex;
+    align-items: center;
+  }
   .icon {
     padding-left: 10px;
   }

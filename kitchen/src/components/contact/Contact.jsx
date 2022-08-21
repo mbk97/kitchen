@@ -5,6 +5,7 @@ import {
   ContactFlexOne,
   ContactFlexTwo,
   TimeContainer,
+  ContactText,
 } from "./style";
 import { SmallTitleText } from "../text/CustomText";
 import { spoon } from "../../assets/svg";
@@ -14,15 +15,17 @@ import contact from "../../assets/images/contact.png";
 
 const Contact = () => {
   return (
-    <CustomWrapper>
+    <CustomWrapper id="contact">
       <ContactWrapper>
         <ContactFlexOne>
           <SmallTitleText>Contact</SmallTitleText>
           <SpoonImg src={spoon} />
           <HeaderText>Find Us</HeaderText>
-          <CustomText>
-            Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
-          </CustomText>
+          <ContactText>
+            <CustomText>
+              Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
+            </CustomText>
+          </ContactText>
           <TimeContainer>
             <SmallTitleText secondary>Opening Hours</SmallTitleText>
             <CustomText>Mon - Fri: 10:00 am - 02:00 am</CustomText>

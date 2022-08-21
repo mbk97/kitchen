@@ -1,7 +1,7 @@
 import React from "react";
 import { spoon, quote, sign } from "../../assets/svg";
 import { CustomText, SecondaryText } from "../text/CustomText";
-import {HeaderText} from "../text/HeaderText";
+import { HeaderText } from "../text/HeaderText";
 import {
   ChefWrapper,
   FlexContentOne,
@@ -20,7 +20,7 @@ import chefImage from "../../assets/images/chef.png";
 
 const Chef = () => {
   return (
-    <CustomWrapper>
+    <CustomWrapper id="chef">
       <ChefWrapper>
         <FlexContentOne>
           <BigImg src={chefImage} />

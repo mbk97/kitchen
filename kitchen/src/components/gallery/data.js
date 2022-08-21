@@ -13,11 +13,11 @@ export const imgData = [
     img: galTwo,
   },
   {
-    id: 1,
+    id: 3,
     img: galThree,
   },
   {
-    id: 1,
+    id: 4,
     img: galFour,
   },
 ];

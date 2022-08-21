@@ -3,13 +3,13 @@ import {
   HeroItemContainer,
   FlexContentOne,
   FlexContentTwo,
-  ScrollWrapper,
-  ScrollImg,
+  // ScrollWrapper,
+  // ScrollImg,
   HeroImage,
   HeroTextWrapper,
 } from "./style";
 import { SmallTitleText, CustomText } from "../text/CustomText";
-import { spoon, scroll } from "../../assets/svg";
+import { spoon } from "../../assets/svg";
 import { SpoonImg } from "../chef/style";
 import { HeroHeader } from "../text/HeaderText";
 import CustomButton from "../button/CustomButton";
@@ -17,7 +17,7 @@ import HeroImg from "../../assets/images/Hero.png";
 
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper id="home">
       <HeroItemContainer>
         <FlexContentOne>
           <SmallTitleText>Chase the new Flavour</SmallTitleText>
@@ -36,9 +36,9 @@ const Hero = () => {
           <HeroImage src={HeroImg} />
         </FlexContentTwo>
       </HeroItemContainer>
-      <ScrollWrapper>
+      {/* <ScrollWrapper>
         <ScrollImg src={scroll} />
-      </ScrollWrapper>
+      </ScrollWrapper> */}
     </HeroWrapper>
   );
 };

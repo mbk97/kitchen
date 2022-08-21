@@ -24,7 +24,7 @@ export const SocialWrapper = styled.div`
 `;
 
 export const SocialIcon = styled.img`
-  margin: 0 5px;
+  margin: 10px 5px;
 `;
 
 export const CopyRight = styled.div`

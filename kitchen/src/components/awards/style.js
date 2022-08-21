@@ -40,7 +40,7 @@ export const AwardData = styled.div`
   }
 `;
 export const AwardImg = styled.img`
-  width: 483px;
+  width: 100%;
   height: 691px;
   object-fit: cover;
   object-position: center;

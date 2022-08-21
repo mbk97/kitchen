@@ -14,7 +14,7 @@ import { HeaderText } from "../text/HeaderText";
 
 const Gallery = () => {
   return (
-    <CustomWrapper>
+    <CustomWrapper id="gallery">
       <GalleryWrapper>
         <LeftContent>
           <SmallTitleText>Instagram</SmallTitleText>

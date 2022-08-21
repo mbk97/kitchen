@@ -11,7 +11,8 @@ export const HeroItemContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   padding: 20px 100px;
   @media (max-width: 600px) {
     padding: 0px 20px;
