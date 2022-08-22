@@ -20,7 +20,7 @@ const Hero = () => {
     <HeroWrapper id="home">
       <HeroItemContainer>
         <FlexContentOne>
-          <SmallTitleText>Chase the new Flavour</SmallTitleText>
+          <SmallTitleText>Choose the new Flavour</SmallTitleText>
           <SpoonImg src={spoon} />
           <HeroTextWrapper>
             <HeroHeader>The key to Fine dining</HeroHeader>
