@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { logo } from "../../assets/svg";
 import { NavWrapper, Nav, Logo, LogoImg, NavList, NavItem } from "./style";
 import { data } from "./data";
