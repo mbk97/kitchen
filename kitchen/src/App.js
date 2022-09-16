@@ -9,6 +9,18 @@ import Awards from "./components/awards/Awards";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { GeneralWrapper, GlobalStyle } from "./components/global/Global";
+import * as Sentry from "@sentry/react";
+import { BrowserTracing } from "@sentry/tracing";
+
+
+Sentry.init({
+  dsn: "https://90dec976f42549c1bb3a05fd703a404d@o1413157.ingest.sentry.io/6752807",
+  integrations: [new BrowserTracing()],
+
+  // We recommend adjusting this value in production, or using tracesSampler
+  // for finer control
+  tracesSampleRate: 1.0,
+});
 
 function App() {
   return (
